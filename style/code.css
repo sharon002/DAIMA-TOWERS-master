@@ -1,0 +1,143 @@
+body{
+	background-image: url("../images/us.png") ;
+	background-size: cover;
+}
+.contact-form{
+	  text-align: center;
+	  padding-top: 15rem;
+	  /* background-image: url("../images/ contact-us.jpeg"); */
+	  
+	 
+
+ /* Center and scale the image nicely */
+ background-position: cover;
+ /* background-repeat: no-repeat; */
+ background-size: cover;
+ flex-direction: column;
+ /* padding: 3rem;
+ margin-top: -1rem;
+ margin: 4rem;
+   */
+  }
+  #contact-us p{
+    font-size: 20px;
+	color:black;
+	 margin-top: -1rem;
+	
+  }
+  #contact-us h2{
+	  font-family: fantasy;
+	  color:black;
+	  font-size: 28px;
+
+  }
+  input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+	box-sizing: border-box;
+  }
+  
+  label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+	box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 10rem;
+	margin-right: 5rem;
+	margin-left: 15rem;
+	width: 50%;
+	cursor: pointer;
+	float: right;
+	box-sizing: border-box;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #45a049;
+	box-sizing: border-box;
+  }
+  
+  .container {
+	border-radius: 5px;
+	/* background-color: #f2f2f2; */
+	/* background-color: #8f1717; */
+	padding: 20px;
+	box-sizing: border-box;
+  }
+  
+  .col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+	box-sizing: border-box;
+  }
+  
+  .col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+	
+	box-sizing: border-box;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+	box-sizing: border-box;
+  }
+
+ button[type="submit"]{
+	 width: 100%;
+	 border: none;
+	 outline: none;
+	 padding: 20px;
+	 font-size: 24px;
+	 border-radius: 8px;
+	 font-family: 'montserret';
+	 color: black;
+	 text-align: center;
+	 cursor: pointer;
+	 margin-top: 10px;
+
+ } 
+
+ button[type="submit"]:hover{
+	 background-color: aquamarine;
+
+ }
+
+ #status{
+	 width: 90%;
+	 max-width: 500px;
+	 text-align: center;
+	 padding: 10px;
+	 margin: 0 auto;
+	 border-radius: 8px;
+ }
+
+ #status.success{
+	 background-color: #4CAF50;
+ }
+ #status.error{
+	 background-color: red;
+	 color: white;
+ }
+ 
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	  box-sizing: border-box;
+	}
+  }
