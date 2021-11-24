@@ -80,8 +80,8 @@
 					</div><!-- End Col -->
 					<div class="col-md-5 banner-half-end">
 						<!-- Images -->
-						<div class="d-none d-md-block bg-img-center h-100" style="background-image: url(assets/img/466x510/img1.jpg);"></div>
-						<div class="d-md-none w-75 mx-auto ms-sm-auto"><img alt="Image Description" class="img-fluid" src="assets/img/466x510/img1.jpg"></div><!-- End Images -->
+						<div class="d-none d-md-block bg-img-center h-100" style="background-image: url(assets/img/466x510/image\ 1.jpg);"></div>
+						<div class="d-md-none w-75 mx-auto ms-sm-auto"><img alt="Image Description" class="img-fluid" src="assets/img/466x510/image 1.jpg"></div><!-- End Images -->
 					</div><!-- End Col -->
 				</div><!-- End Row -->
 			</div>
@@ -100,7 +100,7 @@
 					<div class="me-md-12">
 						<p>The E-workspace center offers a professional platform for start-ups, SMEs, Tech Companies and seasoned businesses. 
 							Good things happen when you surround yourself with like-minded individuals,we pride ourselves in hosting a diverse community
-							 of curious minds who take networking, entrepreneurship, and collaboration to a whole new level.<span id="dots">Wheather you are scaling your business, looking for a new place to network, or part of a global team 
+							 of curious minds who take networking, entrepreneurship, and collaboration to a whole new level.<span id="dots">...</span><span id="more">Wheather you are scaling your business, looking for a new place to network, or part of a global team 
 								that’s setting up a satellite office, The E-work space center offers you a work space that’s perfect for you to 
 								fulfill your business goals and to suit business needs based on your preferences. E work space is a newly established 
 								fully furnished serviced office space provider located at the heart of Eldoret (Daima Towers ) one of the most prestigious 
@@ -110,9 +110,9 @@
 								We provide the resources and learning opportunities to scale your business for long term success. As a Kenyan startup, 
 								we understand the unique needs of our clients. Well-crafted, tailor-made solution which suits your business needs and budget. 
 								You have the ability to expand your office needs within our centre Our spaces are not only generously spacious but 
-								also modern and stylish. We’re still growing. We want to help you do the same.</span></p></span><span id="more"></span> 
+								also modern and stylish. We’re still growing. We want to help you do the same.</span></p>
 							
-							<button onclick="myFunction()" id="myBtn">Read more</button>
+							<!-- <button onclick="myFunction()" id="myBtn">Read more</button>
 							<script>
 								function myFunction() {
 								  var dots = document.getElementById("dots");
@@ -129,7 +129,28 @@
 									moreText.style.display = "inline";
 								  }
 								}
-								</script>
+								</script> -->
+								<button onclick="myFunction()" id="myBtn">Read more</button>
+								<script>
+									function myFunction() {
+									  var dots = document.getElementById("dots");
+									  var moreText = document.getElementById("more");
+									  var btnText = document.getElementById("myBtn");
+									
+									  if (dots.style.display === "none") {
+										dots.style.display = "inline";
+										btnText.innerHTML = "Read more"; 
+										moreText.style.display = "none";
+									  } else {
+										dots.style.display = "none";
+										btnText.innerHTML = "Read less"; 
+										moreText.style.display = "inline";
+									  }
+									}
+									</script>
+
+
+
 					</div>
 				</div><!-- End Col -->
 			</div><!-- End Row -->
@@ -144,8 +165,8 @@
 						<div class="p-5 p-md-7">
 							<!-- Heading -->
 							<div class="mb-7">
-								<span class="text-cap">Work, Meet, Grow.</span>
-								<h3>What We Offer</h3>
+								<!-- <span class="text-cap">Work, Meet, Grow.</span> -->
+								<h3>WHAT WE OFFER</h3>
 								<p>All rooms are professional spaces and cater to a wide range of business needs. Expertly designed, fitted with the latest technology. Our smallest rooms can be used for one-to-one interviews, while our larger spaces can be used for board meetings or team training sessions. We offer you flexible options to caterfotr your needs.we have;</p>
 							</div><!-- End Heading -->
 							<div class="d-grid gap-3">
@@ -154,7 +175,7 @@
 									<div class="flex-shrink-0"></div>
 									<div class="flex-grow-1 ms-4">
 										<h5 class="text-primary"></h5>
-										<p>Fully furnished Private offices</p>
+										<h3>FULLY FURNISHED PRIVATE OFFICES</h3>
 										<p class="text-body">We have designed fantastic and spacious offices with modern furnishes. With beautiful window views and balcony.Designed for 1-4 people, you have dedicated space and access to all our amenities.</p>
 									</div>
 								</div><!-- End Info Block -->
@@ -163,7 +184,7 @@
 									<div class="flex-shrink-0"></div>
 									<div class="flex-grow-1 ms-4">
 										<h5 class="text-primary"></h5>
-										<p>Coworking Desk</p>
+										<h3>COWORKING DESK</h3>
 										<p class="text-body">Amaizing space comfort for a productive day working.Grab your seat at the common area, fire up your laptop and get to work with access to our amenities and meeting rooms.This is one of our best-selling solutions where you have a dedicated workstation in our centre enjoying all the benefits of a private office only in an open space working area setting. Open plan setting gives you the opportunity to network and build a community with other like-minded business people. Companies can also take advantage of this product to have their staff sit together in an open space which increase productivity by enhancing collaboration. Great for individuals or small teams 0f 4-6 people.</p>
 									</div>
 								</div><!-- End Info Block -->
@@ -172,7 +193,7 @@
 									<div class="flex-shrink-0"></div>
 									<div class="flex-grow-1 ms-4">
 										<h5 class="text-primary"></h5>
-										<p>Meeting Rooms</p>
+										<h3>MEETING ROOMS</h3>
 										<p class="text-body">Our rooms are equipped with whiteboards, a wall-mounted screen, HDMI links, stationery to ensure that your meeting runs without a hitch.space for 10-12 people Host any number of people virtually in a hybrid meeting scenario with 360 webcams in our largest meeting rooms.</p>
 									</div>
 								</div><!-- End Info Block -->
@@ -180,7 +201,7 @@
 						</div>
 					</div><!-- End Col -->
 					<div class="col-md-6 content-space-md-1">
-						<div class="w-85 w-md-100 mx-auto me-md-auto"><img alt="Image Description" class="img-fluid" src="assets/img/950x950/img1.jpg"></div>
+						<div class="w-85 w-md-100 mx-auto me-md-auto"><img alt="Image Description" class="img-fluid" src="assets/img/810x1280/image 6.jpeg"></div>
 					</div><!-- End Col -->
 				</div><!-- End Row -->
 			</div>
@@ -192,15 +213,16 @@
 		<h1 style="color: #4264aa; text-align: center;">Our in space Photos</h1>
 		<div class="container-fluid">
 			<div id=gallery>
-			<div class="row align-items-end gx-2 gx-lg-3 mb-2 mb-lg-3">
-				<div class="col-3 d-none d-md-block" style="margin-bottom: -5rem;"><img alt="Image Description" class="img-fluid w-100" src="assets/img/364x268/img1.jpg"></div><!-- End Col -->
-				<div class="col-6 col-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/265x290/img1.jpg"></div><!-- End Col -->
-				<div class="col-6 col-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/387x290/img1.jpg"></div><!-- End Col -->
-				<div class="col-3 d-none d-md-block" style="margin-bottom: -5rem;"><img alt="Image Description" class="img-fluid w-100" src="assets/img/364x268/img2.jpg"></div><!-- End Col -->
+			<div class="row align-items-end gx-2 gx-lg-3 mb-2 mb-lg-3 ">
+				<div class="col-3 d-none d-md-block" style="margin-bottom: -5rem;"><img alt="Image Description" class="img-fluid w-100" src="assets/img/707x1125/image7.jpeg"></div><!-- End Col -->
+				<div class="col-6 col-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/810x1280/image 5.jpeg"></div><!-- End Col -->
+				<div class="col-6 col-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/707x1125/image8.jpeg"></div><!-- End Col -->
+				<div class="col-3 d-none d-md-block" style="margin-bottom: -5rem;"><img alt="Image Description" class="img-fluid w-100" src="assets/img/810x1280/image 2.jpeg"></div><!-- End Col -->
 			</div><!-- End Row -->
 			<div class="row gx-2 gx-lg-3">
-				<div class="col-6 col-md-3 offset-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/387x290/img2.jpg"></div><!-- End Col -->
-				<div class="col-6 col-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/265x290/img2.jpg"></div><!-- End Col -->
+				<div class="col-6 col-md-3 offset-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/810x1280/image 3.jpeg"></div><!-- End Col -->
+				<div class="col-6 col-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/810x1280/image 4.jpeg"></div><!-- End Col -->
+				<div class="col-6 col-md-3"><img alt="Image Description" class="img-fluid w-100" src="assets/img/810x1280/location.jpeg"></div><!-- End Col -->
 			</div><!-- End Row -->
 		</div>
 		</div><!-- End Gallery -->
@@ -222,9 +244,11 @@
 							<div class="card card-lg">
 								<div class="card-header text-center">
 									<div class="mb-2">
-										<span class="fs-5 align-top text-dark fw-bold">KES</span> <span class="fs-2 text-dark fw-bold" data-hs-toggle-switch-item-options='{ "min": 29, "max": 19 }' id="pricingCount1">2000</span> <span>/day<br>weekly subscription 8000</span>
+										<span class="fs-5 align-top text-dark fw-bold">KES</span> <span class="fs-2 text-dark fw-bold" data-hs-toggle-switch-item-options='{ "min": 29, "max": 19 }' id="pricingCount1">2000</span> 
+										<span>/hr <br>Weekly subscription 8,000</span>
+										<span>/hr <br>Monthly subscription 20,000</span>
 									</div>
-									<h5 class="card-title">Executive Private Offices</h5>
+									<h3 class="card-title">EXECUTIVE PRIVATE OFFICES</h3>
 									<p class="card-text">We have designed fantastic and spacious offices with modern furnishes. With beautiful window views and balcony.Designed for 1-4 people, you have dedicated space and access to all our amenities.</p>
 								</div>
 								<div class="card-body d-flex justify-content-center h-100 py-0">
@@ -253,8 +277,10 @@
 								<div class="card-header text-center">
 									<div class="mb-2">
 										<span class="fs-5 align-top text-dark fw-bold">KES</span> <span class="fs-2 text-dark fw-bold" data-hs-toggle-switch-item-options='{ "min": 49, "max": 39 }' id="pricingCount2">1200</span> <span>/day</span>
+										<span>/hr <br>Weekly subscription 4500</span>
+										<span>/hr <br>Monthly subscription 18,000</span>
 									</div>
-									<h5 class="card-title">Open plan Space</h5>
+									<h3 class="card-title">OPEN PLAN SPACE</h3>
 									<p class="card-text">Amaizing space comfort for a productive day working.Grab your seat at the common area, fire up your laptop and get to work with access to our amenities and meeting rooms.</p>
 								</div>
 								<div class="card-body d-flex justify-content-center h-100 py-0">
@@ -281,9 +307,11 @@
 							<div class="card card-lg">
 								<div class="card-header text-center">
 									<div class="mb-2">
-										<span class="fs-5 align-top text-dark fw-bold">KES</span> <span class="fs-2 text-dark fw-bold" data-hs-toggle-switch-item-options='{ "min": 69, "max": 59 }' id="pricingCount3">2000</span> <span>/hr <br>Walk ins Daily rate 7,000</span>
+										<span class="fs-5 align-top text-dark fw-bold">KES</span> <span class="fs-2 text-dark fw-bold" data-hs-toggle-switch-item-options='{ "min": 69, "max": 59 }' id="pricingCount3">2000</span> 
+										<span>/hr <br>Walk ins Daily rate 7,000 </span>
+										<span>/hr <br>Weekly subscription 32,000</span>
 									</div>
-									<h5 class="card-title">Meeting & Board Room</h5>
+									<h3 class="card-title">MEETING & BOARD ROOM</h3>
 									<p class="card-text">Our rooms are equipped with whiteboards, a wall-mounted screen, HDMI links, stationery to ensure that your meeting runs without a hitch.space for 10-12 people</p>
 								</div>
 								<div class="card-body d-flex justify-content-center h-100 py-0">
