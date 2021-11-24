@@ -11,6 +11,9 @@
 	<link href="assets/css/theme.minc619.css" rel="stylesheet">
 	<link href="assets/css/docs.css" rel="stylesheet">
 	<link href="assets/js/styles.js" rel="stylesheet">
+	<link href="Scripts/php/contact-form.css"rel="stylesheet">
+
+
 </head>
 <body>
 	<!-- ========== HEADER ========== -->
@@ -383,78 +386,35 @@
 							<h4>Contact us</h4>
 							<p>Our team is online 24/7 to answer queries.</a></p>
 						</div><!-- End Heading -->
-						<form>
+						<form action="Scripts/php/contact-form.php" class="form-box form-ajax" data-email="hello@indisoftltd.com" method="post">
 							<div class="row">
-							  <div class="col-sm-6 mb-4 mb-sm-0">
-								<!-- Form -->
-								<div class="mb-4">
-								  <label class="form-label" for="contactsFormFirstName">First name</label>
-								  <input type="text" class="form-control" name="contactsFormNameFirstName" id="contactsFormFirstName" placeholder="Jacob" aria-label="Jacob">
+								<div class="col-md-6">
+									<p>Name</p><input class="form-control form-value" id="name" name="name" placeholder="" required="" type="text">
 								</div>
-								<!-- End Form -->
-							  </div>
-							  <!-- End Col -->
-		  
-							  <div class="col-sm-6">
-								<!-- Form -->
-								<div class="mb-4">
-								  <label class="form-label" for="contactsFormLasttName">Last name</label>
-								  <input type="text" class="form-control" name="contactsFormNameLastName" id="contactsFormLasttName" placeholder="Williams" aria-label="Williams">
+								<div class="col-md-6">
+									<p>Email</p><input class="form-control form-value" id="email" name="email" placeholder="" required="" type="email">
 								</div>
-								<!-- End Form -->
-							  </div>
-							  <!-- End Col -->
 							</div>
-							<!-- End Row -->
-		  
-							<!-- Form -->
-							<div class="mb-4">
-							  <label class="form-label" for="contactsFormJobTitle">Job title</label>
-							  <input type="text" class="form-control" name="contactsFormNameJobTitle" id="contactsFormJobTitle" placeholder="CEO" aria-label="E-commerce platform">
-							</div>
-							<!-- End Form -->
-		  
+						
 							<div class="row">
-							  <div class="col-sm-6 mb-4 mb-sm-0">
-								<!-- Form -->
-								<div class="mb-4">
-								  <label class="form-label" for="contactsFormCompany">Company</label>
-								  <input type="text" class="form-control" name="contactsFormNameCompany" id="contactsFormCompany" placeholder="E-workspace" aria-label="Htmlstream">
+								<div class="col-md-12">
+									<p>Message</p>
+									<textarea class="form-control form-value" id="messagge" name="messagge" placeholder="" required=""></textarea>
+									<hr class="space s">
+									<button class="btn btn-primary" type="submit"><i class="fa fa-envelope-o"></i>Send message</button>
 								</div>
-								<!-- End Form -->
-							  </div>
-							  <!-- End Col -->
-		  
-							  <div class="col-sm-6">
-								<!-- Form -->
-								<div class="mb-4">
-								  <label class="form-label" for="contactsFormCompanyWebsite">Company website</label>
-								  <input type="text" class="form-control" name="contactsFormNameCompanyWebsite" id="contactsFormCompanyWebsite" placeholder="eworkspace.co.ke" aria-label="htmlstream.com">
+							</div>
+							<div class="success-box">
+								<div class="alert alert-success">
+									Congratulations. Your message has been sent successfully
 								</div>
-								<!-- End Form -->
-							  </div>
-							  <!-- End Col -->
 							</div>
-							<!-- End Row -->
-		  
-							<!-- Form -->
-							<div class="mb-4">
-							  <label class="form-label" for="contactsFormWorkEmail">Work email</label>
-							  <input type="text" class="form-control" name="contactsFormNameWorkEmail" id="contactsFormWorkEmail" placeholder="email@site.com" aria-label="email@site.com">
+							<div class="error-box">
+								<div class="alert alert-warning">
+									Error, please retry. Your message has not been sent
+								</div>
 							</div>
-							<!-- End Form -->
-		  
-							<!-- Form -->
-							<div class="mb-4">
-							  <label class="form-label" for="contactsFormDetails">Details</label>
-							  <textarea class="form-control" name="contactsFormNameDetails" id="contactsFormDetails" placeholder="Tell us about your payment sales" aria-label="Tell us about your payment sales" rows="4"></textarea>
-							</div>
-							<!-- End Form -->
-		  
-							<div class="d-grid">
-							  <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
-							</div>
-						  </form>
+						</form>
 					</div><!-- End Log in -->
 					<!-- Log in with Modal -->
 					<div id="signupModalFormLoginWithEmail" style="display: none; opacity: 0;">
@@ -554,6 +514,7 @@
 	 
 	<script src="assets/js/vendor.min.js">
 	</script> <!-- JS Space -->
+	<script src="Scripts/php/contact-form.css"></script>
 	 
 	<script src="assets/js/theme.min.js">
 	</script> <!-- JS Plugins Init. -->
