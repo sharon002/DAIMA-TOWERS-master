@@ -6,8 +6,8 @@ if (file_exists("../../../../../wp-load.php")) {
     $isWP = true;
 }
 
-$emailTo       = '<hello@indisoftltd.com>';
-$sender_email = 'hello@indisoftltd.com';
+$emailTo       = '<sharonjep2016@gmail.com>';
+$sender_email = 'sharonjep2016@gmail.com';
 $subject = 'You received a new message';
 
 $errors = array();
