@@ -334,7 +334,11 @@
 			</div><!-- End Heading -->
 			<div class="text-center">
 				<div id="contact">
-				<a class="btn btn-primary" href="#">Contact Us</a>
+					<a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal"
+					data-hs-show-animation-options='{
+							"targetSelector": "#signupModalFormLogin",
+							"groupName": "idForm"
+						  }'>Contact Us</a>
 			</div>
 			</div>
 		</div><!-- End CTA -->
@@ -376,12 +380,81 @@
 					<div id="signupModalFormLogin" style="display: none; opacity: 0;">
 						<!-- Heading -->
 						<div class="text-center mb-7">
-							<h4>Log in</h4>
-							<p>Don't have an account yet? <a class="js-animation-link" data-hs-show-animation-options='{ "targetSelector": "#signupModalFormSignup", "groupName": "idForm" }' href="javascript:;" role="button">Sign up here</a></p>
+							<h4>Contact us</h4>
+							<p>Our team is online 24/7 to answer queries.</a></p>
 						</div><!-- End Heading -->
-						<div class="d-grid gap-2">
-							<a class="btn btn-white btn-lg" href="#"><span class="d-flex justify-content-center align-items-center"><img alt="Image Description" class="avatar avatar-xss me-2" src="assets/svg/brands/google-icon.svg"> Log in with Google</span></a> <a class="js-animation-link btn btn-primary btn-lg" data-hs-show-animation-options='{ "targetSelector": "#signupModalFormLoginWithEmail", "groupName": "idForm" }' href="#">Log in with Email</a>
-						</div>
+						<form>
+							<div class="row">
+							  <div class="col-sm-6 mb-4 mb-sm-0">
+								<!-- Form -->
+								<div class="mb-4">
+								  <label class="form-label" for="contactsFormFirstName">First name</label>
+								  <input type="text" class="form-control" name="contactsFormNameFirstName" id="contactsFormFirstName" placeholder="Jacob" aria-label="Jacob">
+								</div>
+								<!-- End Form -->
+							  </div>
+							  <!-- End Col -->
+		  
+							  <div class="col-sm-6">
+								<!-- Form -->
+								<div class="mb-4">
+								  <label class="form-label" for="contactsFormLasttName">Last name</label>
+								  <input type="text" class="form-control" name="contactsFormNameLastName" id="contactsFormLasttName" placeholder="Williams" aria-label="Williams">
+								</div>
+								<!-- End Form -->
+							  </div>
+							  <!-- End Col -->
+							</div>
+							<!-- End Row -->
+		  
+							<!-- Form -->
+							<div class="mb-4">
+							  <label class="form-label" for="contactsFormJobTitle">Job title</label>
+							  <input type="text" class="form-control" name="contactsFormNameJobTitle" id="contactsFormJobTitle" placeholder="CEO" aria-label="E-commerce platform">
+							</div>
+							<!-- End Form -->
+		  
+							<div class="row">
+							  <div class="col-sm-6 mb-4 mb-sm-0">
+								<!-- Form -->
+								<div class="mb-4">
+								  <label class="form-label" for="contactsFormCompany">Company</label>
+								  <input type="text" class="form-control" name="contactsFormNameCompany" id="contactsFormCompany" placeholder="E-workspace" aria-label="Htmlstream">
+								</div>
+								<!-- End Form -->
+							  </div>
+							  <!-- End Col -->
+		  
+							  <div class="col-sm-6">
+								<!-- Form -->
+								<div class="mb-4">
+								  <label class="form-label" for="contactsFormCompanyWebsite">Company website</label>
+								  <input type="text" class="form-control" name="contactsFormNameCompanyWebsite" id="contactsFormCompanyWebsite" placeholder="eworkspace.co.ke" aria-label="htmlstream.com">
+								</div>
+								<!-- End Form -->
+							  </div>
+							  <!-- End Col -->
+							</div>
+							<!-- End Row -->
+		  
+							<!-- Form -->
+							<div class="mb-4">
+							  <label class="form-label" for="contactsFormWorkEmail">Work email</label>
+							  <input type="text" class="form-control" name="contactsFormNameWorkEmail" id="contactsFormWorkEmail" placeholder="email@site.com" aria-label="email@site.com">
+							</div>
+							<!-- End Form -->
+		  
+							<!-- Form -->
+							<div class="mb-4">
+							  <label class="form-label" for="contactsFormDetails">Details</label>
+							  <textarea class="form-control" name="contactsFormNameDetails" id="contactsFormDetails" placeholder="Tell us about your payment sales" aria-label="Tell us about your payment sales" rows="4"></textarea>
+							</div>
+							<!-- End Form -->
+		  
+							<div class="d-grid">
+							  <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
+							</div>
+						  </form>
 					</div><!-- End Log in -->
 					<!-- Log in with Modal -->
 					<div id="signupModalFormLoginWithEmail" style="display: none; opacity: 0;">
@@ -472,18 +545,7 @@
 						</form>
 					</div><!-- End Reset Password -->
 				</div><!-- End Body -->
-				<!-- Footer -->
-				<div class="modal-footer d-block text-center py-sm-5">
-					<small class="text-cap mb-4">Trusted by the world's best teams</small>
-					<div class="w-85 mx-auto">
-						<div class="row justify-content-between">
-							<div class="col"><img alt="Logo" class="img-fluid" src="assets/svg/brands/gitlab-gray.svg"></div><!-- End Col -->
-							<div class="col"><img alt="Logo" class="img-fluid" src="assets/svg/brands/fitbit-gray.svg"></div><!-- End Col -->
-							<div class="col"><img alt="Logo" class="img-fluid" src="assets/svg/brands/flow-xo-gray.svg"></div><!-- End Col -->
-							<div class="col"><img alt="Logo" class="img-fluid" src="assets/svg/brands/layar-gray.svg"></div><!-- End Col -->
-						</div>
-					</div><!-- End Row -->
-				</div><!-- End Footer -->
+			
 			</div>
 		</div>
 	</div><!-- Go To -->
