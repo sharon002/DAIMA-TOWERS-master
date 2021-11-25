@@ -112,7 +112,7 @@
 								You have the ability to expand your office needs within our centre Our spaces are not only generously spacious but 
 								also modern and stylish. We’re still growing. We want to help you do the same.</span></p>
 							
-							<!-- <button onclick="myFunction()" id="myBtn">Read more</button>
+							<button onopen="myFunction()" id="myBtn">Read more</button>
 							<script>
 								function myFunction() {
 								  var dots = document.getElementById("dots");
@@ -129,28 +129,7 @@
 									moreText.style.display = "inline";
 								  }
 								}
-								</script> -->
-								<button onclick="myFunction()" id="myBtn">Read more</button>
-								<script>
-									function myFunction() {
-									  var dots = document.getElementById("dots");
-									  var moreText = document.getElementById("more");
-									  var btnText = document.getElementById("myBtn");
-									
-									  if (dots.style.display === "none") {
-										dots.style.display = "inline";
-										btnText.innerHTML = "Read more"; 
-										moreText.style.display = "none";
-									  } else {
-										dots.style.display = "none";
-										btnText.innerHTML = "Read less"; 
-										moreText.style.display = "inline";
-									  }
-									}
-									</script>
-
-
-
+								</script>
 					</div>
 				</div><!-- End Col -->
 			</div><!-- End Row -->
@@ -265,7 +244,11 @@
 								</div>
 								<div class="card-footer text-center">
 									<div class="d-grid mb-2">
-										<button class="btn btn-ghost-primary" type="button">Contact Us</button>
+										<a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal"
+											data-hs-show-animation-options='{
+													"targetSelector": "#signupModalFormLogin",
+												"groupName": "idForm"
+						  				}'>CONTACT US</a>
 									</div>
 									<p class="card-text text-muted small">Pay on book</p>
 								</div>
@@ -296,7 +279,9 @@
 								</div>
 								<div class="card-footer text-center">
 									<div class="d-grid mb-2">
-										<button class="btn btn-ghost-primary" type="button">Contact Us</button>
+										<div class="col-md-6">
+											<p>Email</p><input class="form-control form-value" id="email" name="email" placeholder="" required="" type="email">
+										</div>
 									</div>
 									<p class="card-text text-muted small">Pay on book</p>
 								</div>
@@ -326,7 +311,12 @@
 								</div>
 								<div class="card-footer text-center">
 									<div class="d-grid mb-2">
-										<button class="btn btn-ghost-primary" type="button">Contact Us</button>
+										<a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal"
+											data-hs-show-animation-options='{
+											"targetSelector": "#signupModalFormLogin",
+											"groupName": "idForm"
+						  				}'>CONTACT US </a>
+										
 									</div>
 									<p class="card-text text-muted small">Pay on book</p>
 								</div>
@@ -342,7 +332,11 @@
 											<p class="card-text">Contact Us and we will be more than happy to assist we're online 24/7</p>
 										</div><!-- End Col -->
 										<div class="col-sm-auto">
-											<a class="btn btn-white" href="#">Contact Us<i class="bi-chevron-right small ms-2"></i></a>
+											<a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal"
+											data-hs-show-animation-options='{
+											"targetSelector": "#signupModalFormLogin",
+											"groupName": "idForm"
+						  				}'>CONTACT US </a>
 										</div><!-- End Col -->
 									</div><!-- End Row -->
 								</div>
@@ -414,13 +408,19 @@
 							<h4>Contact us</h4>
 							<p>Our team is online 24/7 to answer queries.</a></p>
 						</div><!-- End Heading -->
-						<form action="Scripts/php/contact-form.php" class="form-box form-ajax" data-email="sharonjep2016@gmail.com" method="post">
+						<form action="Scripts/php/contact-form.php" class="form-box form-ajax" data-email="hello@indisoftltd.com" method="post">
 							<div class="row">
 								<div class="col-md-6">
 									<p>Name</p><input class="form-control form-value" id="name" name="name" placeholder="" required="" type="text">
 								</div>
 								<div class="col-md-6">
 									<p>Email</p><input class="form-control form-value" id="email" name="email" placeholder="" required="" type="email">
+								</div>
+								<div class="col-md-6">
+									<p>phone Number</p><input class="form-control form-value" id="number" name="number" placeholder="" required="" type="number">
+								</div>
+								<div class="col-md-6">
+									<p>Calender</p><input class="form-control form-value" id="date" name="date" placeholder="" required="" type="date">
 								</div>
 							</div>
 						
